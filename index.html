@@ -1,0 +1,9 @@
+<script src="https://rawgit.com/oampo/Audiolet/master/src/audiolet/Audiolet.js"></script>
+<script src="dist/PinkNoise.min.js"></script>
+<script>
+(function(){
+	var audiolet = new Audiolet();
+    var pink = new PinkNoise(audiolet);
+    pink.connect(audiolet.output);
+})();
+</script>

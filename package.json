@@ -1,0 +1,16 @@
+{
+  "name":"pinknoise",
+  "version":"0.0.1",
+  "description":"An audiolet pinknoise generator",
+  "author":"David Konsumer <konsumer@jetboystudio.com>",
+  "scripts": {
+    "start": "browserify . --standalone PinkNoise -o dist/PinkNoise.js && uglifyjs dist/PinkNoise.js -o dist/PinkNoise.min.js"
+  },
+  "dependencies": {
+    "openmusic-pink-noise": "^1.0.2"
+  },
+  "devDependencies": {
+    "browserify": "^8.0.3",
+    "uglify-js": "^2.4.16"
+  }
+}
